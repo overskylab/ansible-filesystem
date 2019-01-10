@@ -1,0 +1,11 @@
+---
+filesystem_devices:
+  - device: /dev/nvme1n1
+    fstype: ext4
+    resize: no
+  - device: /dev/nvme2n1
+    fstype: ext4
+    resize: no
+  - device: /dev/nvme3n1
+    fstype: ext4
+    resize: no

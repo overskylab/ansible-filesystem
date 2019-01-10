@@ -1,0 +1,10 @@
+---
+- name: Include OS family specific variables
+  include_vars: "{{ item }}"
+  with_first_found:
+    - "{{ ansible_os_family }}.yml"
+    - default.yml
+  
+- include_tasks: mount_pre.yml
+- include_tasks: mount_install.yml
+- include_tasks: mount_post.yml

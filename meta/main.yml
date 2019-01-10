@@ -1,0 +1,15 @@
+---
+galaxy_info:
+  role_name: mount
+  author: Teerawat Namsricharoensuk
+  description: Ansible role to manage mounting disks
+  license: MIT
+  min_ansible_version: 2.6
+  platforms:
+  - name: Ubuntu
+    versions:
+    - trusty
+    - xenial
+  galaxy_tags:
+    - mount
+dependencies: []

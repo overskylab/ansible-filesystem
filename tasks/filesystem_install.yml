@@ -1,0 +1,8 @@
+---
+- name: Make filesystem
+  filesystem:
+    device: "{{ item.device }}"
+    fstype: "{{ item.fstype }}"
+    resizefs: "{{ item.resize | default('no') }}"
+  with_items: "{{ filesystem_devices }}"
+  when: filesystem_devices is defined
