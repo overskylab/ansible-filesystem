@@ -1,8 +1,8 @@
 ---
 galaxy_info:
-  role_name: mount
+  role_name: filesystem
   author: Teerawat Namsricharoensuk
-  description: Ansible role to manage mounting disks
+  description: Ansible role to prepare disk filesystem
   license: MIT
   min_ansible_version: 2.6
   platforms:
